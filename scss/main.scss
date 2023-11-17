@@ -1,7 +1,5 @@
 /* Main stylesheet */
 
-/* Import partials */
-
 @import './meta/variables';
 
 *,
@@ -25,26 +23,42 @@ body {
 
 .header {
   grid-area: header;
-}
-
-.nav-sidebar {
-  grid-area: sidebar;
-}
-
-.main-content {
-  grid-area: main;
-}
-
-/* For visualization */
-
-.header {
   background: $header-clr;
 }
 
 .nav-sidebar {
+  grid-area: sidebar;
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: $secondary-clr;
   background: $sidebar-clr;
+  padding: 1rem 2rem;
+
+  ul {
+    list-style: none;
+  }
+
+  li.settings {
+    margin-top: 3rem;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+}
+
+.logo {
+  font-size: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.site-links {
+  display: grid;
+  gap: 1rem;
 }
 
 .main-content {
+  grid-area: main;
   background: $main-clr;
 }

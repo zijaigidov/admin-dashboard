@@ -1,5 +1,4 @@
 /* Main stylesheet */
-/* Import partials */
 /* Variables */
 *,
 *::before,
@@ -18,25 +17,39 @@ body {
 
 .header {
   grid-area: header;
-}
-
-.nav-sidebar {
-  grid-area: sidebar;
-}
-
-.main-content {
-  grid-area: main;
-}
-
-/* For visualization */
-.header {
   background: white;
 }
 
 .nav-sidebar {
+  grid-area: sidebar;
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #e2e8f0;
   background: #1992d4;
+  padding: 1rem 2rem;
+}
+.nav-sidebar ul {
+  list-style: none;
+}
+.nav-sidebar li.settings {
+  margin-top: 3rem;
+}
+.nav-sidebar a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.logo {
+  font-size: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.site-links {
+  display: grid;
+  gap: 1rem;
 }
 
 .main-content {
+  grid-area: main;
   background: #e2e8f0;
 }/*# sourceMappingURL=main.css.map */
