@@ -1,0 +1,50 @@
+/* Main stylesheet */
+
+/* Import partials */
+
+@import './meta/variables';
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* Define grid */
+  display: grid;
+  grid:
+    'sidebar header' 200px
+    'sidebar main' 1fr
+    / 300px 1fr;
+
+  height: 100vh;
+}
+
+.header {
+  grid-area: header;
+}
+
+.nav-sidebar {
+  grid-area: sidebar;
+}
+
+.main-content {
+  grid-area: main;
+}
+
+/* For visualization */
+
+.header {
+  background: $header-clr;
+}
+
+.nav-sidebar {
+  background: $sidebar-clr;
+}
+
+.main-content {
+  background: $main-clr;
+}

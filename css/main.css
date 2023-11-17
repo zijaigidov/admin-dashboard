@@ -1,1 +1,42 @@
-/*# sourceMappingURL=main.css.map */
+/* Main stylesheet */
+/* Import partials */
+/* Variables */
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* Define grid */
+  display: grid;
+  grid: "sidebar header" 200px "sidebar main" 1fr/300px 1fr;
+  height: 100vh;
+}
+
+.header {
+  grid-area: header;
+}
+
+.nav-sidebar {
+  grid-area: sidebar;
+}
+
+.main-content {
+  grid-area: main;
+}
+
+/* For visualization */
+.header {
+  background: white;
+}
+
+.nav-sidebar {
+  background: #1992d4;
+}
+
+.main-content {
+  background: #e2e8f0;
+}/*# sourceMappingURL=main.css.map */
