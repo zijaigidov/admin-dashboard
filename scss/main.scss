@@ -1,64 +1,11 @@
-/* Main stylesheet */
+/* Meta partials */
 
 @import './meta/variables';
+@import './meta/resets';
 
-*,
-*::before,
-*::after {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
+/* Section partials */
 
-body {
-  /* Define grid */
-  display: grid;
-  grid:
-    'sidebar header' 200px
-    'sidebar main' 1fr
-    / 300px 1fr;
-
-  height: 100vh;
-}
-
-.header {
-  grid-area: header;
-  background: $header-clr;
-}
-
-.nav-sidebar {
-  grid-area: sidebar;
-  font-size: 1.25rem;
-  font-weight: bold;
-  color: $secondary-clr;
-  background: $sidebar-clr;
-  padding: 1rem 2rem;
-
-  ul {
-    list-style: none;
-  }
-
-  li.settings {
-    margin-top: 3rem;
-  }
-
-  a {
-    color: inherit;
-    text-decoration: none;
-  }
-}
-
-.logo {
-  font-size: 1.5rem;
-  margin-bottom: 3rem;
-}
-
-.site-links {
-  display: grid;
-  gap: 1rem;
-}
-
-.main-content {
-  grid-area: main;
-  background: $main-clr;
-}
+@import './sections/document';
+@import './sections/header';
+@import './sections/sidebar';
+@import './sections/main-content';

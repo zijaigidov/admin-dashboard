@@ -1,5 +1,6 @@
-/* Main stylesheet */
+/* Meta partials */
 /* Variables */
+/* Resets */
 *,
 *::before,
 *::after {
@@ -8,6 +9,8 @@
   box-sizing: border-box;
 }
 
+/* Section partials */
+/* Document styles */
 body {
   /* Define grid */
   display: grid;
@@ -15,11 +18,13 @@ body {
   height: 100vh;
 }
 
+/* Header */
 .header {
   grid-area: header;
   background: white;
 }
 
+/* Sidebar */
 .nav-sidebar {
   grid-area: sidebar;
   font-size: 1.25rem;
@@ -49,6 +54,7 @@ body {
   gap: 1rem;
 }
 
+/* Main content section */
 .main-content {
   grid-area: main;
   background: #e2e8f0;

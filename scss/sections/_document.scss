@@ -1,0 +1,12 @@
+/* Document styles */
+
+body {
+  /* Define grid */
+  display: grid;
+  grid:
+    'sidebar header' 200px
+    'sidebar main' 1fr
+    / 300px 1fr;
+
+  height: 100vh;
+}
