@@ -12,17 +12,18 @@
     / 2fr 300px;
   gap: 2rem;
 
-  h2 {
-    margin-bottom: 1rem;
+  > section {
+    display: grid;
+    grid-template-rows: min-content 1fr;
+    gap: 1rem;
   }
 }
 
 .projects {
   grid-area: projects;
-  gap: 1rem;
 
   .card {
-    height: 250px;
+    min-height: 200px;
   }
 }
 
@@ -30,12 +31,6 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 1.5rem;
-}
-
-.announcements,
-.trending {
-  display: grid;
-  grid-template-rows: min-content 1fr;
 }
 
 .announcements {

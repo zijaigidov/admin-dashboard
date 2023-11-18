@@ -63,28 +63,23 @@ body {
   grid: "projects announcements" 1fr "projects trending" 1fr/2fr 300px;
   gap: 2rem;
 }
-.main-content h2 {
-  margin-bottom: 1rem;
+.main-content > section {
+  display: grid;
+  grid-template-rows: min-content 1fr;
+  gap: 1rem;
 }
 
 .projects {
   grid-area: projects;
-  gap: 1rem;
 }
 .projects .card {
-  height: 250px;
+  min-height: 200px;
 }
 
 .cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 1.5rem;
-}
-
-.announcements,
-.trending {
-  display: grid;
-  grid-template-rows: min-content 1fr;
 }
 
 .announcements {
