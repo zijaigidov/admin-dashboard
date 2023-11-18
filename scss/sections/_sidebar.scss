@@ -17,17 +17,36 @@
   }
 
   a {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
     color: inherit;
     text-decoration: none;
   }
 }
 
 .logo {
-  font-size: 1.5rem;
+  font-size: 1.75rem;
   margin-bottom: 3rem;
+
+  a {
+    gap: 0;
+  }
+
+  svg {
+    fill: $secondary-clr;
+    width: 3rem;
+    transform: translateX(-20%);
+  }
 }
 
 .site-links {
   display: grid;
   gap: 1rem;
+
+  svg {
+    fill: $secondary-clr;
+    width: 1.5rem;
+  }
 }
