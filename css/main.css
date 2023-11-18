@@ -32,7 +32,6 @@ body {
 .nav-sidebar {
   grid-area: sidebar;
   font-size: 1.25rem;
-  font-weight: bold;
   color: #e2e8f0;
   background: #1992d4;
   padding: 1rem 2rem;
@@ -52,6 +51,7 @@ body {
 }
 
 .logo {
+  font-weight: 600;
   font-size: 1.75rem;
   margin-bottom: 3rem;
 }
