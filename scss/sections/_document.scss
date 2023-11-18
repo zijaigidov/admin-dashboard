@@ -1,5 +1,9 @@
 /* Document styles */
 
+html {
+  font-family: $primary-font, $system-fonts;
+}
+
 body {
   /* Define grid */
   display: grid;
