@@ -3,4 +3,38 @@
 .header {
   grid-area: header;
   background: $header-clr;
+  padding: 1.5rem 3rem 1rem;
+
+  display: grid;
+  gap: 1rem;
+  grid-template: 1fr 1fr / 1fr 500px;
+
+  > * {
+    border: 1px solid black;
+  }
+
+  .searchbar {
+    display: grid;
+    grid-template: 32px / 32px 1fr;
+    grid-gap: 0.5rem;
+
+    label {
+      cursor: pointer;
+      display: grid;
+    }
+
+    svg {
+      place-self: center;
+      height: 80%;
+    }
+
+    input[type='search'] {
+      font-size: 0.9em;
+      background: $secondary-clr;
+      padding: 0 16px;
+      outline: none;
+      border: none;
+      border-radius: 16px;
+    }
+  }
 }

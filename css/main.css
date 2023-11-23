@@ -26,6 +26,34 @@ body {
 .header {
   grid-area: header;
   background: white;
+  padding: 1.5rem 3rem 1rem;
+  display: grid;
+  gap: 1rem;
+  grid-template: 1fr 1fr/1fr 500px;
+}
+.header > * {
+  border: 1px solid black;
+}
+.header .searchbar {
+  display: grid;
+  grid-template: 32px/32px 1fr;
+  grid-gap: 0.5rem;
+}
+.header .searchbar label {
+  cursor: pointer;
+  display: grid;
+}
+.header .searchbar svg {
+  place-self: center;
+  height: 80%;
+}
+.header .searchbar input[type=search] {
+  font-size: 0.9em;
+  background: #e2e8f0;
+  padding: 0 16px;
+  outline: none;
+  border: none;
+  border-radius: 16px;
 }
 
 /* Sidebar */
