@@ -9,6 +9,12 @@
   box-sizing: border-box;
 }
 
+button {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
 /* Section partials */
 /* Document styles */
 html {
@@ -29,7 +35,7 @@ body {
   padding: 1.5rem 3rem 1rem;
   display: grid;
   gap: 1rem;
-  grid-template: 1fr 1fr/1fr 500px;
+  grid-template: 1fr 1fr/1fr 400px;
 }
 .header > * {
   border: 1px solid black;
@@ -54,6 +60,22 @@ body {
   outline: none;
   border: none;
   border-radius: 16px;
+}
+.header .buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+.header .buttons button {
+  flex: 1;
+  cursor: pointer;
+  font-weight: bold;
+  color: #e2e8f0;
+  background: #1992d4;
+  padding: 0.75rem 0;
+  border: none;
+  border-radius: 2rem;
 }
 
 /* Sidebar */

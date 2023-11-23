@@ -7,7 +7,7 @@
 
   display: grid;
   gap: 1rem;
-  grid-template: 1fr 1fr / 1fr 500px;
+  grid-template: 1fr 1fr / 1fr 400px;
 
   > * {
     border: 1px solid black;
@@ -35,6 +35,24 @@
       outline: none;
       border: none;
       border-radius: 16px;
+    }
+  }
+
+  .buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+
+    button {
+      flex: 1;
+      cursor: pointer;
+      font-weight: bold;
+      color: $secondary-clr;
+      background: $sidebar-clr;
+      padding: 0.75rem 0;
+      border: none;
+      border-radius: 2rem;
     }
   }
 }
