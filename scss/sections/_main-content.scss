@@ -2,7 +2,7 @@
 
 .main-content {
   grid-area: main;
-  background: $main-clr;
+  background: $color-grey;
   padding: 2rem 2rem 5rem 2rem;
 
   display: grid;
@@ -42,5 +42,5 @@
 }
 
 .card {
-  background: $main-card-clr;
+  background: $color-white;
 }

@@ -2,7 +2,7 @@
 
 .header {
   grid-area: header;
-  background: $header-clr;
+  background: $color-white;
   padding: 1.5rem 3rem 1rem;
 
   display: grid;
@@ -30,7 +30,7 @@
 
     input[type='search'] {
       font-size: 0.9em;
-      background: $secondary-clr;
+      background: $color-grey;
       padding: 0 16px;
       outline: none;
       border: none;
@@ -48,8 +48,8 @@
       flex: 1;
       cursor: pointer;
       font-weight: bold;
-      color: $secondary-clr;
-      background: $sidebar-clr;
+      color: $color-white;
+      background: $color-blue;
       padding: 0.75rem 0;
       border: none;
       border-radius: 2rem;

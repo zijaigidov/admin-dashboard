@@ -3,8 +3,8 @@
 .nav-sidebar {
   grid-area: sidebar;
   font-size: 1.25rem;
-  color: $secondary-clr;
-  background: $sidebar-clr;
+  color: $color-white;
+  background: $color-blue;
   padding: 1rem 2rem;
 
   ul {
@@ -35,7 +35,7 @@
   }
 
   svg {
-    fill: $secondary-clr;
+    fill: $color-white;
     width: 3rem;
     transform: translateX(-20%);
   }
@@ -46,7 +46,7 @@
   gap: 1rem;
 
   svg {
-    fill: $secondary-clr;
+    fill: $color-white;
     width: 1.5rem;
   }
 }
