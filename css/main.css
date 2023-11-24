@@ -40,7 +40,7 @@ body {
   padding: 1.5rem 3rem 1rem;
   display: grid;
   gap: 1rem;
-  grid-template: 1fr 1fr/1fr 400px;
+  grid-template: 1fr 2fr/1fr 400px;
 }
 .header .searchbar {
   display: grid;
