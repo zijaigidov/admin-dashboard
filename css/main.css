@@ -201,6 +201,27 @@ body {
 .announcements {
   grid-area: announcements;
 }
+.announcements .cards {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  gap: 1rem;
+  background: white;
+  padding: 1.5rem;
+}
+.announcements .card h3 {
+  font-size: 1rem;
+  margin-bottom: 0.25rem;
+}
+.announcements .card p {
+  font-size: 0.85rem;
+  color: #757575;
+}
+.announcements .card:not(:last-child) {
+  border-bottom: 1px solid #e2e8f0;
+}
+.announcements .card:not(:last-child) p {
+  margin-bottom: 1rem;
+}
 
 .trending {
   grid-area: trending;

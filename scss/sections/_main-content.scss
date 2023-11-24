@@ -35,6 +35,34 @@
 
 .announcements {
   grid-area: announcements;
+
+  .cards {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 1rem;
+    background: $color-white;
+    padding: 1.5rem;
+  }
+
+  .card {
+    h3 {
+      font-size: 1rem;
+      margin-bottom: 0.25rem;
+    }
+
+    p {
+      font-size: 0.85rem;
+      color: $color-gray;
+    }
+
+    &:not(:last-child) {
+      border-bottom: 1px solid $color-gray-light;
+
+      p {
+        margin-bottom: 1rem;
+      }
+    }
+  }
 }
 
 .trending {
