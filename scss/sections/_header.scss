@@ -66,6 +66,32 @@
     }
   }
 
+  .user-greeting {
+    display: grid;
+    grid-template: 1fr 1fr / repeat(2, max-content);
+    row-gap: 0.25rem;
+    column-gap: 0.75rem;
+    align-items: center;
+    height: 100%;
+
+    font-weight: bold;
+
+    img {
+      grid-row: 1 / span 2;
+      height: 100%;
+    }
+
+    .greeting-text {
+      font-size: 0.875rem;
+      align-self: end;
+    }
+
+    .user-name {
+      font-size: 1.25rem;
+      align-self: start;
+    }
+  }
+
   .buttons {
     display: flex;
     justify-content: center;
