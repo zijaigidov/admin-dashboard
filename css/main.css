@@ -189,14 +189,13 @@ body {
 .projects {
   grid-area: projects;
 }
-.projects .card {
-  min-height: 200px;
-}
-
-.cards {
+.projects .cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 1.5rem;
+}
+.projects .card {
+  min-height: 200px;
 }
 
 .announcements {
@@ -205,6 +204,37 @@ body {
 
 .trending {
   grid-area: trending;
+}
+.trending .cards {
+  display: grid;
+  background: white;
+  padding: 1rem 1.5rem;
+}
+.trending .card {
+  display: grid;
+  grid-template: 1fr 1fr/max-content 1fr;
+  row-gap: 0.375rem;
+  -moz-column-gap: 1rem;
+       column-gap: 1rem;
+  align-items: center;
+}
+.trending .card img {
+  height: 75%;
+  grid-row: 1/span 2;
+}
+.trending .card .user-name,
+.trending .card .user-title {
+  font-size: 0.8rem;
+  /* Use grid to align text */
+  display: grid;
+  height: 100%;
+}
+.trending .card .user-name {
+  font-weight: 700;
+  align-items: end;
+}
+.trending .card .user-title {
+  color: #757575;
 }
 
 .card {
