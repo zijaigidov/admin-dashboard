@@ -172,6 +172,12 @@ body {
   fill: white;
   width: 1.5rem;
 }
+.site-links a:hover {
+  color: #d4d4d4;
+}
+.site-links a:hover svg {
+  fill: #d4d4d4;
+}
 
 /* Main content section */
 .main-content {

@@ -2,7 +2,7 @@
 
 .main-content {
   grid-area: main;
-  background: $color-gray-light;
+  background: $color-gray-lighter;
   padding: 2rem 2rem 5rem 2rem;
 
   display: grid;
@@ -78,7 +78,7 @@
     }
 
     &:not(:last-child) {
-      border-bottom: 1px solid $color-gray-light;
+      border-bottom: 1px solid $color-gray-lighter;
 
       p {
         margin-bottom: 1rem;

@@ -46,4 +46,12 @@
     fill: $color-white;
     width: 1.5rem;
   }
+
+  a:hover {
+    color: $color-gray-light;
+
+    svg {
+      fill: $color-gray-light;
+    }
+  }
 }
