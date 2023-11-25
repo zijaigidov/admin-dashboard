@@ -38,6 +38,14 @@
     padding: 3rem 2rem;
     border-left: 10px solid $color-gray-dark;
     border-radius: 10px;
+
+    h3 {
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      color: $color-gray;
+    }
   }
 
   .icons {
