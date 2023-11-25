@@ -1,0 +1,7 @@
+@mixin card-border-radius {
+  border-radius: 10px;
+}
+
+@mixin box-shadow {
+  box-shadow: 0 2px 8px $color-box-shadow;
+}

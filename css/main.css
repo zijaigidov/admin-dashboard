@@ -195,11 +195,14 @@ body {
   gap: 1.5rem;
 }
 .projects .card {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
   display: flex;
   flex-direction: column;
   min-height: 200px;
   padding: 3rem 2rem;
   border-left: 10px solid #515570;
+  border-radius: 10px;
 }
 .projects .icons {
   margin-top: auto;
@@ -215,6 +218,8 @@ body {
   grid-area: announcements;
 }
 .announcements .cards {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
   display: grid;
   grid-template-rows: repeat(3, 1fr);
   gap: 1rem;
@@ -240,9 +245,12 @@ body {
   grid-area: trending;
 }
 .trending .cards {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
   display: grid;
   background: white;
   padding: 1rem 1.5rem;
+  border-radius: 10px;
 }
 .trending .card {
   display: grid;
