@@ -1,6 +1,9 @@
 /* Header */
 
 .header {
+  @include box-shadow;
+  z-index: 1;
+
   grid-area: header;
   background: $color-white;
   padding: 1.5rem 3rem 1rem;
